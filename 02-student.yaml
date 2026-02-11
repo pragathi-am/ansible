@@ -1,0 +1,20 @@
+- name: "pragathi"
+  dob: "01-01-1986"
+  age: 38
+  addresses: 
+  - type: "current"
+    street: "bhoo samartha"
+    city: "blr"
+  - type: "perm"
+    street: "bhoo samartha"
+    city: "blr"
+- name: "pavani"
+  dob: "01-01-1986"
+  age: 38
+  addresses: 
+  - type: "current"
+    street: "bhoo samartha"
+    city: "blr"
+  - type: "perm"
+    street: "bhoo samartha"
+    city: "blr"

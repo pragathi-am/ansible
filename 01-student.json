@@ -1,0 +1,41 @@
+{
+   "students": [
+   {
+        "firstname": "pragathi",
+        "age": 38,
+        "dob": "01-01-1986",
+        "address": [
+            {
+                "type": "perm",
+                "flat": 108,
+                "street":"bhoosamartha"
+            },
+            {
+                "type": "current",
+                "flat": 108,
+                "street":"bhoosamartha"
+            }
+                    ],
+        "skills":["mainframe","cobol","json"]
+   },
+  {
+        "firstname": "pragathi",
+        "age": 38,
+        "dob": "01-01-1986",
+        "address": [
+            {
+                "type": "perm",
+                "flat": 108,
+                "street":"bhoosamartha"
+            },
+            {
+                "type": "current",
+                "flat": 108,
+                "street":"bhoosamartha"
+            }
+                    ],
+        "skills":["mainframe","cobol","json"]
+  }
+  ]
+
+}
