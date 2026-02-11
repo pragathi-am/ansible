@@ -1,6 +1,6 @@
 - name: varprompt module sample
   hosts: local
-  connection:local
+  connection: local
   vars_prompt:
   - name: username
     prompt: "Enter username"
