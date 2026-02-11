@@ -1,0 +1,11 @@
+- name: playbook level variables
+  hosts: local
+  connection: local
+  vars: 
+    COURSE: "Devops training"
+    DURATION: "140hrs"
+  tasks:
+    - name: print variables
+      COURSE: "Ansible training"
+      ansible.builtin.debug:
+        msg: "Course is {{COURSE}} and Duration is {{DURATION}}"
