@@ -1,6 +1,6 @@
 - name: playbook level variables
   hosts: local
-  connections: local
+  connection: local
   vars: 
     COURSE: "Devops training"
     DURATION: "140hrs"
