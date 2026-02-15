@@ -8,7 +8,7 @@
   - name: print os family redhat
     ansible.builtin.debug:
       msg: " package is redhat"
-    when: ansible_facts.os_family == "Redhat"
+    when: ansible_facts.os_family == "RedHat"
   - name: print os family ubantu
     ansible.builtin.debug:
       msg: " package is redhat"
