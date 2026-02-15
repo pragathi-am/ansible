@@ -8,7 +8,7 @@
     FURTHER_INFO:  # map {}
       MONTHS: 4
       COURSE: "Ansible"
-    TOPIC: # list
+    TOPIC: # list []
       - linux
       - shell
       - ansible

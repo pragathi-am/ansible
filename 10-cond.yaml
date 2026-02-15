@@ -1,0 +1,12 @@
+- name: conditions sample
+  hosts: local
+  connections: local
+  vars:
+    IS_LIVE: true
+    IS_GOOD: false
+  tasks: 
+    - name: when test sample
+      ansible.builtin.debug:
+        msg: " yes it is live"
+      when: IS_LIVE
+# If it is true then only msg statement will execute 
