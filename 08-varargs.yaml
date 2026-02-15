@@ -3,6 +3,8 @@
   connection: local
   tasks:
   - name: var args to print message
+    vars: 
+      NAME = "var from task pavani "
     ansible.builtin.debug:
      msg: " the name of course is {{ NAME }}"
 
