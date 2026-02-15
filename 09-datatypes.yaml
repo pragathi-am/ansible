@@ -13,7 +13,7 @@
       - shell
       - ansible
       - terraform
-  task:
+  tasks:
     - name: print datatypes 
       ansible.builtin.debug:
         msg: |
