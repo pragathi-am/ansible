@@ -1,6 +1,6 @@
 - name: conditions sample
   hosts: local
-  connections: local
+  connection: local
   vars:
     IS_LIVE: true
     IS_GOOD: false
