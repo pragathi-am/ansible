@@ -1,5 +1,5 @@
 - name: var args sample
-  host: local
+  hosts: local
   connection: local
   tasks:
    - name: var args to print message
