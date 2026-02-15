@@ -3,6 +3,10 @@
   connection: local
   tasks:
   - name: ansible command task
-    ansible.builtin.command: cat /etc/passwd | grep root
+    #ansible.builtin.command: cat /etc/passwd | grep root
+    # above commmand gives error becz | won't work in command mode. so we have to use shell
+    ansible.builtin.shell: cat /etc/passwd | grep root
     register: user_output # here above command output will be stored in register variable called as user_output
-      
+  - name: ansible shell output
+    ansible.builtin..debug:    
+      msg: "{{ user_output }}"   
