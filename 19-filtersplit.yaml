@@ -3,10 +3,26 @@
   connection: local
   vars:
     topic: python,devops,c,yml
-    tager:
+    tagmap:
       name: ansible # map
       project:  devops
       component: catalogue
+    taglist:
+       [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "devops"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+       ]
+
   tasks: 
   - name: filters default task
     ansible.builtin.debug:
@@ -16,4 +32,7 @@
      msg: "{{ topic | split (',') }} "
   - name: filter split the map to list
     ansible.builtin.debug:    
-     msg: "{{ tager | dict2items }}"
+     msg: "{{ tagmap | dict2items }}"
+  - name: filter split the list to map
+    ansible.builtin.debug:    
+     msg: "{{ taglist | items2dict }}"
