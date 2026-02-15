@@ -4,7 +4,7 @@
   tasks:
   - name: var args to print message
     ansible.builtin.debug:
-    msg: " the name of course is {{ NAME }}"
+     msg: " the name of course is {{ NAME }}"
 
 
 
