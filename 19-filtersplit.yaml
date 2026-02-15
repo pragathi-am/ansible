@@ -38,7 +38,7 @@
      msg: "{{ taglist | items2dict }}"
   - name: read 02-student.yaml
     ansible.builtin.set_fact:
-      student_ymlvar: "{{ lookup('file', 02-student.yaml ) | from_json }}"
+      student_ymlvar: "{{ lookup('file', '02-student.yaml' ) | from_json }}"
   - name: convert 02-student.yaml to json
     ansible.builtin.debug:
       msg: "{{ student_ymlvar | to_nice_json }}"
