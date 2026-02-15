@@ -9,5 +9,5 @@
       state: "{{item.state}}"
     loop: # list of map
     - { name: "mysql" , state: "absent" } # map
-    - { name: "ngnix" , state: "present" } 
+    - { name: "nginx" , state: "present" } 
     - { name: "zip" , state: "present" } 
