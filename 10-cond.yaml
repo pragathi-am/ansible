@@ -8,5 +8,5 @@
     - name: when test sample
       ansible.builtin.debug:
         msg: " yes it is live"
-      when: IS_LIVE
+      when: IS_GOOD
 # If it is true then only msg statement will execute 
