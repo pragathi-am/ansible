@@ -1,6 +1,7 @@
 - name: install pacakges
   hosts: local
   connection: local
+  become: yes
   tasks:
   - name: install pkgs in loop
     ansible.builtin.package:
@@ -9,5 +10,5 @@
     loop:
     - mysql
     - nginx
-    
+
     
