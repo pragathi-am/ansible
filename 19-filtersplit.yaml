@@ -3,7 +3,7 @@
   connection: local
   vars:
     topic: python,devops,c,yml
-  tags:
+  tager:
     name: ansible # map
     project:  devops
     component: catalogue
@@ -16,4 +16,4 @@
      msg: "{{ topic | split (',') }} "
   - name: filter split the map to list
     ansible.builtin.debug:    
-     msg: "{{ tags | dict2items }}"
+     msg: "{{ tager | dict2items }}"
