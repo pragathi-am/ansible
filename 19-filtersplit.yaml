@@ -3,6 +3,10 @@
   connection: local
   vars:
     topic: python,devops,c,yml
+  tags:
+    name: ansible # map
+    project:  devops
+    component: catalogue
   tasks: 
   - name: filters default task
     ansible.builtin.debug:
@@ -10,3 +14,6 @@
   - name: filter split the string to list
     ansible.builtin.debug:    
      msg: "{{ topic | split (',') }} "
+  - name: filter split the map to list
+    ansible.builtin.debug:    
+     msg: "{{ tags | dict2items }} 
