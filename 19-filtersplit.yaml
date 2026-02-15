@@ -3,9 +3,9 @@
   connection: local
   vars:
     topic: python,devops,c,yml
-  tager:
-    name: ansible # map
-    project:  devops
+    tager:
+      name: ansible # map
+      project:  devops
     component: catalogue
   tasks: 
   - name: filters default task
