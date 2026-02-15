@@ -1,0 +1,8 @@
+- name: ansible command vs shell module
+  hosts: local
+  connection: local
+  tasks:
+    - name: ansible command task
+      ansible.builtin.command: cat /etc/passwd | grep root
+      register: user_output # here above command output will be stored in register variable called as user_output
+      
