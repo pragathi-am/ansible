@@ -1,0 +1,12 @@
+- name: loops sample
+  hosts: local
+  connection: local
+  tasks: 
+  - name: loops task
+    ansible.builtin.debug:
+     msg: "names are as :{{ item }}"
+    loop:
+    - pragathi
+    - jaya
+    - kaushi
+    - chaithu
