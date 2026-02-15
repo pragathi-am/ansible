@@ -1,10 +1,12 @@
 - name: var args sample
   hosts: local
   connection: local
+  vars: 
+    NAME: "play: Devops training"
   tasks:
   - name: var args to print message
-    vars: 
-      NAME = "var from task pavani "
+    vars:
+      NAME: "var from task pavani "
     ansible.builtin.debug:
      msg: " the name of course is {{ NAME }}"
 
