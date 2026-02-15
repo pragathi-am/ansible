@@ -1,0 +1,26 @@
+- name: data types sample
+  hosts: local
+  connection: local
+  var: 
+    PROGRAM: " This is Devops" # string
+    DUR: 140 # integer
+    IS_GOOD: true  # boolean
+    FURTHER_INFO:  # map {}
+      MONTHS: 4
+      COURSE: "Ansible"
+    TOPIC: # list
+      - linux
+      - shell
+      - ansible
+      - terraform
+  task:
+    - name: print datatypes 
+      ansible.builtin.debug:
+        msg: |
+          {{ PROGRAM }}
+          {{ DUR }}
+          {{ IS_GOOD }}
+          {{ FURTHER_INFO }}
+          {{ TOPIC }}
+
+
