@@ -1,7 +1,7 @@
 - name: data types sample
   hosts: local
   connection: local
-  var: 
+  vars: 
     PROGRAM: " This is Devops" # string
     DUR: 140 # integer
     IS_GOOD: true  # boolean
