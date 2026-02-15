@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   tasks:
-   - name: var args to print message
-     ansible.builtin.debug:
-     msg: " the name of course is {{ NAME }}"
+  - name: var args to print message
+    ansible.builtin.debug:
+    msg: " the name of course is {{ NAME }}"
 
 
 
