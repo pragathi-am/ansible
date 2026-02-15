@@ -6,7 +6,7 @@
     tager:
       name: ansible # map
       project:  devops
-    component: catalogue
+      component: catalogue
   tasks: 
   - name: filters default task
     ansible.builtin.debug:
