@@ -10,14 +10,14 @@
      - name: test conditions task
        ansible.builtin.debug:
         msg: "yes number of sessions are more than 7"
-     when: NO_SESSIONS > 5 
+     when: NO_SESSIONS | int > 5 
    - block: 
      - name: test equall task
        ansible.builtin.debug:
         msg: "yes number of sessions are 5"
-     when: NO_SESSIONS = 5 
+     when: NO_SESSIONS | int == 5 
    - block: 
      - name: test lessthan task
        ansible.builtin.debug:
         msg: "yes number of sessions less than 5"
-     when: NO_SESSIONS < 5   
+     when: NO_SESSIONS | int < 5   
