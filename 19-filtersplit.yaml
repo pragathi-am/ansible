@@ -1,0 +1,12 @@
+- name: filters sample
+  hosts: local
+  connection: local
+  vars:
+    topic: python,devops,c,yml
+  tasks: 
+  - name: filters default task
+    ansible.builtin.debug:
+     msg: "Hi Pragathi, {{ GREET | default('GOOD MNG') }}"
+  - name: filter split the string to list
+    ansible.builtin.debug:    
+     msg: "{{ topic | split (',') }} "
