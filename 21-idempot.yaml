@@ -1,0 +1,8 @@
+- name: to check ansible idempotency by using collections instead of command functions
+  hosts: local
+  connection: local
+  become: yes
+  tasks:  
+  - name: create user id with collections
+    ansible.builtin.user:
+      name: Pragathi
