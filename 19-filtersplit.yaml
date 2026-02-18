@@ -3,6 +3,7 @@
   connection: local
   vars:
     topic: python,devops,c,yml
+    designation: "DevOps Engineer"
     tagmap:
       name: ansible # map
       project:  devops
@@ -27,18 +28,31 @@
   - name: filters default task
     ansible.builtin.debug:
      msg: "Hi Pragathi, {{ GREET | default('GOOD MNG') }}"
+
   - name: filter split the string to list
     ansible.builtin.debug:    
      msg: "{{ topic | split (',') }} "
+
   - name: filter split the map to list
     ansible.builtin.debug:    
      msg: "{{ tagmap | dict2items }}"
+
   - name: filter split the list to map
     ansible.builtin.debug:    
      msg: "{{ taglist | items2dict }}"
+
   - name: read 02-student.yaml
     ansible.builtin.set_fact:
       student_ymlvar: "{{ lookup('file', '02-student.yaml' ) | from_yaml }}"
+
   - name: convert 02-student.yaml to json
     ansible.builtin.debug:
       msg: "{{ student_ymlvar | to_nice_json }}"
+
+  - name: convert string to uppper case
+    ansible.builtin.debug:
+      msg: "{{ designation | upper }}"
+
+  - name: convert string to lower case
+    ansible.builtin.debug:
+      msg: "{{ designation | lower }}"            
