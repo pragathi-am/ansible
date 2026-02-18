@@ -10,3 +10,8 @@
     - name: print the ouptup
       ansible.builtin.debug:
         msg:  "{{ user_op }}"
+
+    - name: create user if RC ! = 0 of above command
+      ansible.builtin.command: useradd roboshop
+      when: user_op.rc != 0
+
