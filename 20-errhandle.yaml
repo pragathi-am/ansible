@@ -1,6 +1,7 @@
 - name: filters sample
   hosts: local
   connection: local
+  become: yes
   tasks: 
     - name: cehck user exist or not
       ansible.builtin.command: id roboshop
