@@ -4,6 +4,7 @@
   vars:
     topic: python,devops,c,yml
     designation: "DevOps Engineer"
+    ipchk:  54.87.29.285
     tagmap:
       name: ansible # map
       project:  devops
@@ -56,3 +57,7 @@
   - name: convert string to lower case
     ansible.builtin.debug:
       msg: "{{ designation | lower }}"            
+
+  - name: to check given ip is ipv4 or not
+    ansible.builtin.debug:
+      msg: "{{ ipchk | ansible.utils.ipv4 }}"  
